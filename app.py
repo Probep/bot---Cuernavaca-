@@ -5,7 +5,7 @@ import torch
 
 app = Flask(__name__)
 
-MODEL_PATH = "./mi_bot_cuernavaca"
+MODEL_PATH = "distilgpt2"
 tokenizer = GPT2Tokenizer.from_pretrained(MODEL_PATH)
 model = GPT2LMHeadModel.from_pretrained(MODEL_PATH)
 model.eval()
